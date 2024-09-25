@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+#container{
+    min-width: 376px;
+    max-width: 376px;
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    background-image: url(images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 15%;
+    background-color: #FFF1F1;
+}
+
+.container__header {
+    width: 100%;
+    padding: 30px 0 30px 30px;
+}
+
+.container__header__logo {
+    width: 100px;
+}
+
+.box-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-main__color {
+    margin-bottom: 14px;
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.box-main__title {
+    padding: 310px 70px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    line-height: 1.1;
+}
+
+.box-main__text {
+    margin-bottom: 30px;
+    padding: 0 32px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 14px;
+    color: hsl(0, 36%, 70%);
+}
+
+.box-form {
+    display: flex;
+    justify-content: space-between;
+    width: 308px;
+    height: 48px;
+    border-bottom: 1px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    border-top: 1px solid hsl(0, 36%, 70%);
+    border-left: 1px solid hsl(0, 36%, 70%);
+    margin: 0 30px;
+}
+
+.box-form--change {
+    border-top: 1px solid hsl(0, 93%, 68%);
+    border-left: 1px solid hsl(0, 93%, 68%);
+    border-bottom: 1px solid hsl(0, 93%, 68%);
+}
+
+.box-form__email {
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    opacity: 0.6;
+    outline: none;
+}
+
+.box-form__email::placeholder {
+    color: hsl(0, 36%, 70%);
+    opacity: 0.9;
+}
+
+.box-form__icon {
+    display: none;
+    align-items: center;
+    margin-left: 44px;
+}
+
+.box-form__icon__icon {
+    width: 20px;
+}
+
+.box-form__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 48px;
+    border: 1px solid hsl(0, 80%, 86%);
+    border-radius: 22px;
+    outline: none;
+    box-shadow: -2px 16px 10px hsla(0, 0%, 0%, 0.055);
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    cursor: pointer;
+}
+
+.box-form__submit--change {
+    box-shadow: -2px 8px 10px hsla(0, 0%, 0%, 0.13);
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 59%, 82%));
+}
+
+.box-form__sunmit__icon {
+    padding: 14px;
+}
+
+.box-error {
+    width: 100%;
+}
+
+.box-error__text {
+    padding: 10px 0 0 54px;
+    color: hsl(0, 93%, 68%);
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1440px) {
+    #container{
+        max-width: 1440px;
+        width: 100%;
+        height: 800px;
+        background-image:  url(images/hero-desktop.jpg), url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right center, left center;
+        background-size: 42% 100%, 60%;
+    }
+
+    .container__header {
+        width: 100%;
+        padding: 60px 0 30px 168px;
+    }
+
+    .container__header__logo {
+        width: 160px;
+    }
+
+    .box-main {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 62%;
+    }
+
+    .box-main__title {
+        padding: 100px 144px 20px 168px;
+        text-align: left;
+        font-size: 62px;
+    }
+
+    .box-main__text {
+        margin-bottom: 40px;
+        padding: 0 275px 0 168px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .box-form {
+        width: 445px;
+        height: 56px;
+        margin: 0 0 0 166px;
+    }
+
+    .box-form__email::placeholder {
+        font-size: 16px;
+    }
+
+    .box-form__icon {
+        margin-left: 126px;
+    }
+    
+    .box-form__icon__icon {
+        width: 24px;
+    }
+
+    .box-form__submit {
+        width: 106px;
+        height: 56px;
+        border-radius: 40px;
+    }
+
+    .box-error__text {
+        padding: 10px 0 0 190px;
+    }
+}
