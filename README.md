@@ -4,7 +4,7 @@ Obrigado por conferir esse desafio.
 
 Para desenvolver esse projeto, eu atilizei as tecnologias HTML, CSS e JavaScript.
 
-## Projeto - Base Apparel página em breve
+## Projeto - Base apparel página em breve
 
 Meu desafio é criar esta página em breve e fazê-la parecer o mais próximo possível do design.
 
